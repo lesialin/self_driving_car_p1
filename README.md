@@ -2,13 +2,11 @@
 
 
 
-This is the first project of Udactiy  "Selef-Driving Car " Term1 . The goal of the project is to detect the lane on the road. The detected lane would be color in red, just like following:
-
-
+This is the first project of "Selef-Driving Car " Term1 . The goal of this project is to detect the lane on the road, and the lane would be color in red, just like following:
 
 ### ![road_image](my_test_result/solid_2.png )
 
-The method to detect lane is quite simple. Followed by the concept from the course, I just used canny edge detect to get the edge in the road image, and then apply hough transform to recognize the line segment.
+The method to detect lane is quite simple. Followed by the concept from the course, I just used canny edge detect to get the edge in the road image,  then applied hough transform to recognize the line segment.
 
 However, to detect whole lane (solid lines from image bottom to up) needs another effort. I will describe the more detail processes of this project.
 
@@ -36,7 +34,7 @@ The pipeline of my lane detection method is:
 
 - Canny edge detection
 
-  Just have the same threshold as sample in course.
+  Just have the same threshold as example in the course.
 
   edge_low_threshold = 50
   edge_high_threshold = 150  
